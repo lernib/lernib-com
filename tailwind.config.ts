@@ -15,7 +15,11 @@ const config: Config = {
       },
       colors: {
         lernib1: '#FAFAFA',
-        lernib2: '#054CC0',
+        lernib2: {
+          DEFAULT: '#054CC0',
+          300: '#054CC0',
+          900: '#f8fbff'
+        },
         lernib3: '#FC5836',
         lernib4: '#FEC305',
         lernib5: '#26C465',
