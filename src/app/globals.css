@@ -34,3 +34,11 @@ body {
     text-wrap: balance;
   }
 }
+
+@media (max-width: 599px) {
+
+  .nib-nomobile {
+    display: none;
+  }
+
+}

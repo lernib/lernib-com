@@ -18,6 +18,7 @@ const config: Config = {
         lernib2: {
           DEFAULT: '#054CC0',
           300: '#054CC0',
+          700: '#c6dbfe',
           900: '#f8fbff'
         },
         lernib3: '#FC5836',
