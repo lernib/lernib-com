@@ -5,6 +5,8 @@ import {
   filson_pro_heavy, moderat_bold
 } from "@/utils/font";
 import BENEFITS from "@/data/benefits";
+import SUBJECTS from "@/data/subjects";
+import { REM } from "@/utils/style";
 
 export default function Home() {
   return (
@@ -121,6 +123,92 @@ export default function Home() {
               ">
                 {benefit.content}
               </p>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="
+        bg-lernib2 text-lernib1
+
+        self-stretch
+
+        flex flex-col justify-center items-start
+        p-12 pt-20 pr-0
+        gap-x-40
+        
+        md:flex-row
+      ">
+        <div className="
+          flex flex-col justify-start items-start
+        ">
+          <h2 className={`
+            ${moderat_bold.className}
+
+            text-3xl
+          `}>
+            Excellent tutorship
+            <br />
+            in all of the following
+            <br />
+            classes
+          </h2>
+          <p className="
+            text-xl mt-4 mb-12
+          ">
+            I specialize in cases where students have unique or
+            <br />
+            unusual requirements. To ensure you get the right
+            <br />
+            support, I start by understanding your needs, then I
+            <br />
+            come up with a personalized a learning plan for you,
+            <br />
+            to help you reach your goals with confidence.
+          </p>
+        </div>
+        <div className="
+          flex flex-col justify-start items-start
+
+          gap-y-8
+        ">
+          {SUBJECTS.map(subject => (
+            <div className="
+              grid
+              grid-rows-[2.5rem_1fr]
+              grid-cols-[3.5rem_1fr]
+              gap-x-8 gap-y-4
+
+              justify-center items-center
+              mt-12
+
+              lg:mt-0
+            ">
+              <div className={`
+                bg-lernib1
+
+                p-2
+                w-[3.25rem]
+                h-[3.25rem]
+                rounded-2xl
+              `}>
+                <Image
+                  src={subject.src}
+                  alt="Subject icon"
+                  width={REM * 2.25}
+                  height={REM * 2.25}
+                />
+              </div>
+              <h1 className={`
+                ${moderat_bold.className}
+
+                text-2xl
+              `}>{ subject.title }</h1>
+              <br />
+              <div className="
+                max-w-[40ch]
+              ">
+                { subject.content }
+              </div>
             </div>
           ))}
         </div>
