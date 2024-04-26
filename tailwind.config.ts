@@ -14,7 +14,11 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        lernib1: '#FAFAFA',
+        lernib1: {
+          DEFAULT: '#FAFAFA',
+          400: '#c7c7c7',
+          800: '#FAFAFA'
+        },
         lernib2: {
           DEFAULT: '#054CC0',
           300: '#054CC0',

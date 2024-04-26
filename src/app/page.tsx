@@ -2,11 +2,14 @@ import Image from "next/image";
 
 import PageHeader from "@/components/PageHeader";
 import {
-  filson_pro_heavy, moderat_bold
+  filson_pro_heavy,
+  moderat_black, moderat_bold
 } from "@/utils/font";
 import BENEFITS from "@/data/benefits";
 import SUBJECTS from "@/data/subjects";
+import SUCCESS from "@/data/success";
 import { REM } from "@/utils/style";
+import five_stars from "@/assets/images/five_stars.png";
 
 export default function Home() {
   return (
@@ -142,15 +145,13 @@ export default function Home() {
           flex flex-col justify-start items-start
         ">
           <h2 className={`
-            ${moderat_bold.className}
+            ${moderat_black.className}
 
             text-3xl
           `}>
-            Excellent tutorship
+            Excellent tutorship in all of
             <br />
-            in all of the following
-            <br />
-            classes
+            the following classes
           </h2>
           <p className="
             text-xl mt-4 mb-12
@@ -212,6 +213,89 @@ export default function Home() {
             </div>
           ))}
         </div>
+      </div>
+      <div className="
+        bg-lernib1 text-black
+
+        w-full
+        py-8
+        text-2xl
+
+        flex flex-col justify-start items-center
+      ">
+        <h2 className={`
+          ${moderat_bold.className}
+
+          text-center
+          text-4xl
+          mb-12
+        `}>
+          <span className="text-lernib2">
+            Student success
+          </span> is
+          <br />
+          the goal for me
+        </h2>
+        <div className="
+          w-fit
+
+          flex flex-col justify-center items-center
+          mx-12
+          gap-4
+
+          md:flex-row
+        ">
+          {SUCCESS.map(success => (
+            <div className="
+              text-xl
+              p-8
+
+              md:max-w-md
+
+              flex flex-col justify-start items-start
+              bg-lernib1-400
+
+              self-stretch
+            ">
+              <span className={`
+                ${moderat_bold.className}
+
+                flex flex-row justify-between items-center
+                w-full
+
+                max-sm:pt-8
+              `}>
+                { success.student }
+                <Image
+                  src={five_stars}
+                  alt="five stars"
+                  height={REM * 1.5625}
+                  width={REM * 1.5625 * five_stars.width / five_stars.height}
+                  className="
+                    block ml-5
+                  "
+                />
+              </span>
+              <hr className="
+                w-full my-4
+              " />
+              <p>
+                { success.review }
+              </p>
+            </div>
+          ))}
+        </div>
+        <a href="/blog" className={`
+          ${moderat_bold.className}
+
+          text-[1.1rem]
+
+          mt-8
+          border-2 border-black
+          py-3 px-6
+        `}>
+          See More
+        </a>
       </div>
     </>
   );
