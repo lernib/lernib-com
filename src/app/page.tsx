@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import PageHeader from "@/components/PageHeader";
+import PageFooter from "@/components/PageFooter";
 import {
   filson_pro_heavy,
   moderat_black, moderat_bold
@@ -297,6 +298,7 @@ export default function Home() {
           See More
         </a>
       </div>
+      <PageFooter />
     </>
   );
 }
