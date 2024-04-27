@@ -43,6 +43,50 @@ export default function Home() {
 					Egestas lacus ultricies pellentesque dignissim id faucibus.
 				</h2>
 			</div>
+			<div className="
+				bg-lernib1 text-black
+
+				flex flex-col justify-center items-center
+				self-stretch
+				
+				mx-8 mt-12
+				p-4
+				gap-8
+			">
+				<h2 className={`
+					${filson_pro_heavy.className}
+
+					text-3xl
+				`}>
+					How it started
+				</h2>
+				<p className="
+					max-w-[55ch]
+
+					text-lg text-center
+				">
+					Lernib was inspired by challenges - academic and others - that we saw students
+					facing around us. We realized that it wasn't just the material that made
+					learning difficult.
+				</p>
+				<p className="
+					max-w-[55ch]
+
+					text-lg text-center
+				">
+					Sometimes it was loneliness and exhaustion. Other times,
+					it was needing a teammate to help plan a big project. And, sometimes, it was
+					getting back to basics with study skills and time management.
+				</p>
+				<p className="
+					max-w-[55ch]
+
+					text-lg text-center
+				">
+					We wanted to provide truly personalized support that went beyond tutoring. Lernib
+					was born.
+				</p>
+			</div>
 			<PageFooter />
 		</>
 	)
