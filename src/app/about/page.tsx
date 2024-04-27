@@ -87,6 +87,66 @@ export default function Home() {
 					was born.
 				</p>
 			</div>
+			<div className="
+				bg-lernib1 text-black
+
+				flex flex-col justify-center items-center
+				h-fit mt-20
+
+				md:flex-row md:gap-x-4 md:mx-8 md:mt-20
+			">
+				<div className="
+					bg-lernib3
+
+					self-stretch p-16
+
+					md:w-1/2
+					md:rounded-3xl
+				" />
+
+				<div className="
+					bg-lernib2 text-lernib1
+
+
+					flex flex-col
+					p-16
+
+					gap-y-12
+					text-lg
+
+					md:w-fit
+					md:rounded-3xl
+				">
+					<h2 className={`
+						${moderat_bold.className}
+
+						text-2xl
+					`}>
+						Our Mission
+					</h2>
+
+					<p className="
+						max-w-[31ch]
+					">
+						We believe that everyone learns better when they have personalized
+						support that meets their individual needs.
+					</p>
+
+					<p className="
+						max-w-[31ch]
+					">
+						We understand that no two students are alike, and we embrace diverse
+						learning styles.
+					</p>
+
+					<p className="
+						max-w-[31ch]
+					">
+						Whether you need help with study skills or just someone to bounce ideas
+						off of, we're here to help.
+					</p>
+				</div>
+			</div>
 			<PageFooter />
 		</>
 	)
