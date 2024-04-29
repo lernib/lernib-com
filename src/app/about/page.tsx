@@ -18,7 +18,7 @@ export default function Home() {
 				flex flex-col justify-center items-center
 				flex-1
 
-				py-20 mx-8
+				py-20 px-8
 			">
 				<h1 className={`
 					${moderat_black.className}
@@ -52,7 +52,7 @@ export default function Home() {
 				flex flex-col justify-center items-center
 				self-stretch
 				
-				mx-8 mt-12
+				px-8
 				p-4
 				gap-8
 			">
@@ -60,6 +60,7 @@ export default function Home() {
 					${filson_pro_heavy.className}
 
 					text-3xl
+					mt-12
 				`}>
 					How it started
 				</h2>
@@ -85,6 +86,8 @@ export default function Home() {
 					max-w-[55ch]
 
 					text-lg text-center
+
+					mb-20
 				">
 					We wanted to provide truly personalized support that went beyond tutoring. Lernib
 					was born.
@@ -94,9 +97,9 @@ export default function Home() {
 				bg-lernib1 text-black
 
 				flex flex-col justify-center items-center
-				h-fit mt-20
+				h-fit
 
-				md:flex-row md:gap-x-4 md:mx-8 md:mt-20
+				md:flex-row md:gap-x-4 md:px-8
 			">
 				<div className="
 					bg-lernib3
@@ -154,12 +157,13 @@ export default function Home() {
 				bg-lernib1 text-black
 
 				flex flex-col justify-start items-center
-				mb-8 mt-20
+				pb-8 pt-20
 			">
 				<h1 className={`
 					${filson_pro_heavy.className}
 
-					text-3xl mb-12
+					text-3xl
+					mb-12
 				`}>
 					Our Values
 				</h1>
@@ -172,8 +176,8 @@ export default function Home() {
 					lg:mx-20
 					lg:gap-y-0
 				">
-					{VALUES.map(value => (
-						<div className="
+					{VALUES.map((value, i) => (
+						<div key={i} className="
 							bg-lernib2-700 text-lernib2
 
 							self-stretch

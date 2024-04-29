@@ -100,8 +100,8 @@ export default function Home() {
           justify-center items-center
           gap-y-16
         ">
-          {BENEFITS.map(benefit => (
-            <div className="
+          {BENEFITS.map((benefit, i) => (
+            <div key={i} className="
               flex flex-col justify-start items-center
               gap-y-6 mt-12
 
@@ -173,8 +173,8 @@ export default function Home() {
 
           gap-y-8
         ">
-          {SUBJECTS.map(subject => (
-            <div className="
+          {SUBJECTS.map((subject, i) => (
+            <div key={i} className="
               grid
               grid-rows-[2.5rem_1fr]
               grid-cols-[3.5rem_1fr]
@@ -246,8 +246,8 @@ export default function Home() {
 
           md:flex-row
         ">
-          {SUCCESS.map(success => (
-            <div className="
+          {SUCCESS.map((success, i) => (
+            <div key={i} className="
               text-xl
               p-8
 
