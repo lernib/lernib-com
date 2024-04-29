@@ -70,7 +70,7 @@ export default function Home() {
 					text-lg text-center
 				">
 					Lernib was inspired by challenges - academic and others - that we saw students
-					facing around us. We realized that it wasn't just the material that made
+					facing around us. We realized that it wasn&apos;t just the material that made
 					learning difficult.
 				</p>
 				<p className="
@@ -149,7 +149,7 @@ export default function Home() {
 						max-w-[31ch]
 					">
 						Whether you need help with study skills or just someone to bounce ideas
-						off of, we're here to help.
+						off of, we&apos;re here to help.
 					</p>
 				</div>
 			</div>

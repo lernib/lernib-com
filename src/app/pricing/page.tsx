@@ -50,7 +50,7 @@ export default function Home() {
 				lg:flex-row lg:p-20
 			">
 				{PRICES.map((price, i) => (
-					<div className="
+					<div key={i} className="
 						bg-lernib2-700 text-black
 						shadow-lg
 
