@@ -1,9 +1,12 @@
+import Image from "next/image";
+
 import PageFooter from "@/components/PageFooter";
 import PageHeader from "@/components/PageHeader";
 import {
   filson_pro_heavy,
   moderat_black, moderat_bold
 } from "@/utils/font";
+import VALUES from "@/data/values";
 
 export default function Home() {
 	return (
@@ -145,6 +148,68 @@ export default function Home() {
 						Whether you need help with study skills or just someone to bounce ideas
 						off of, we're here to help.
 					</p>
+				</div>
+			</div>
+			<div className="
+				bg-lernib1 text-black
+
+				flex flex-col justify-start items-center
+				mb-8 mt-20
+			">
+				<h1 className={`
+					${filson_pro_heavy.className}
+
+					text-3xl mb-12
+				`}>
+					Our Values
+				</h1>
+				<div className="
+					grid grid-rows-3 grid-cols-1
+					gap-x-12 gap-y-8
+					mx-8
+
+					lg:grid-cols-3 lg:grid-rows-1
+					lg:mx-20
+					lg:gap-y-0
+				">
+					{VALUES.map(value => (
+						<div className="
+							bg-lernib2-700 text-lernib2
+
+							self-stretch
+
+							rounded-3xl
+							p-8
+
+							flex flex-col
+
+							lg:h-full
+						">
+							<Image
+								src={value.icon}
+								alt={`${value.title} icon`}
+								width="52"
+								height="52"
+							/>
+
+							<h2 className={`
+								${filson_pro_heavy.className}
+
+								text-3xl
+								pt-8
+							`}>
+								{value.title}
+							</h2>
+
+							<p className="
+								text-xl
+								mt-8
+								max-w-[27ch]
+							">
+								{value.content}
+							</p>
+						</div>
+					))}
 				</div>
 			</div>
 			<PageFooter />
