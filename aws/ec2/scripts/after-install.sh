@@ -4,6 +4,11 @@ set -xe
 export RESPATH=/usr/local/codedeployresources
 
 ##############################
+# REQUIRED FOR CERTBOT
+##############################
+sudo amazon-linux-extras install epel
+
+##############################
 # INSTALL HTTPD
 ##############################
 yum update -y
@@ -18,12 +23,15 @@ cp $RESPATH/site.conf /etc/httpd/conf.d/site.conf
 cp $RESPATH/site-ssl.conf /etc/httpd/conf.d/site-ssl.conf.disabled
 
 
-yum install certbot python3-certbot-apache -y
+yum install certbot certbot-apache -y
 certbot certonly --apache --non-interactive --agree-tos --email support@lernib.com -d dev.lernib.com
 
 mv /etc/httpd/conf.d/site-ssl.conf.disabled /etc/httpd/conf.d/site-ssl.conf
 systemctl restart httpd
 
+##############################
+# SERVICES
+##############################
 mv $RESPATH/site.service /etc/systemd/system/site.service
 
 systemctl enable site
