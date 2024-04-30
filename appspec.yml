@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: aws/ec2
+  - source: /aws/ec2
     destination: /usr/local/codedeployresources
 hooks:
   BeforeInstall:
