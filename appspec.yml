@@ -5,16 +5,16 @@ files:
     destination: /usr/local/codedeployresources
 hooks:
   BeforeInstall:
-    - location: scripts/before-install.sh
+    - location: aws/ec2/scripts/before-install.sh
       timeout: 300
       runas: root
-    - location: scripts/before-install-nopriv.sh
+    - location: aws/ec2/scripts/before-install-nopriv.sh
       timeout: 300
       runas: ec2-user
   AfterInstall:
-    - location: scripts/after-install.sh
+    - location: aws/ec2/scripts/after-install.sh
       timeout: 300
       runas: root
-    - location: scripts/after-install-nopriv.sh
+    - location: aws/ec2/scripts/after-install-nopriv.sh
       timeout: 300
       runas: ec2-user
