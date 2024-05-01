@@ -1,0 +1,19 @@
+
+.animation {
+	animation-duration: 0.5s;
+	animation-name: rise;
+}
+
+.preanimation {
+	transform: translateY(100%);
+}
+
+@keyframes rise {
+	from {
+		transform: translateY(100%);
+	}
+
+	to {
+		transform: translateY(0%);
+	}
+}

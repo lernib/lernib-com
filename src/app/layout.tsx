@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { moderat_medium } from "@/utils/font";
 import "./globals.css";
+import InDev from "@/components/InDev";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,7 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={moderat_medium.className}>{children}</body>
+      <body className={moderat_medium.className}>
+				{children}
+				<InDev />
+			</body>
     </html>
   );
 }
