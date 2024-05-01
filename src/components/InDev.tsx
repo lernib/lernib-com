@@ -37,7 +37,7 @@ export default function InDev() {
 			</span>
 
 			<span>
-				We're still setting up our website.
+				We&apos;re still setting up our website.
 			</span>
 		</div>
 	)
