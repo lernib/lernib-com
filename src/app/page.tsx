@@ -11,6 +11,15 @@ import SUBJECTS from "@/data/subjects";
 import SUCCESS from "@/data/success";
 import { REM } from "@/utils/style";
 import five_stars from "@/assets/images/five_stars.png";
+import { Metadata } from "next";
+
+const TITLE = "Homepage | Lernib";
+export const metadata: Metadata = {
+	title: TITLE,
+	twitter: {
+		title: TITLE
+	}
+};
 
 export default function Home() {
   return (
