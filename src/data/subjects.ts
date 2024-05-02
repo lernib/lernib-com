@@ -7,16 +7,16 @@ export default [
   {
     "title": "Computer Science",
     "src": computer_science,
-    "content": "We teach like a caring parent,\nand never like a monotone\nlecture hall professor.\n"
+    "content": "Do you have an idea for a game, or want to pass your AP computer science tests? We can help out."
   },
   {
     "title": "SAT tutoring",
     "src": sat,
-    "content": "We teach like a caring parent,\nand never like a monotone\nlecture hall professor.\n"
+    "content": "We can create an in-depth, personalized plan to help you pass your SAT with flying colors."
   },
   {
     "title": "Study skills support",
     "src": study_skills,
-    "content": "We teach like a caring parent,\nand never like a monotone\nlecture hall professor.\n"
+    "content": "We often help students struggling with focus or homework management. Ready to raise your grades?"
   }
 ]

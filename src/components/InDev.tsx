@@ -21,12 +21,10 @@ export default function InDev() {
 
 			bg-yellow-400 text-black
 
-			sticky bottom-0
+			fixed bottom-0
 			w-full py-4
 
 			flex justify-center items-center
-
-
 		`}>
 			<span className={`
 				${moderat_black.className}
