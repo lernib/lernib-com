@@ -6,6 +6,15 @@ import {
 	moderat_black,
 	moderat_bold
 } from "@/utils/font";
+import { Metadata } from "next";
+
+const TITLE = "Pricing | Lernib";
+export const metadata: Metadata = {
+	title: TITLE,
+	twitter: {
+		title: TITLE
+	}
+};
 
 export default function Home() {
 	return (
